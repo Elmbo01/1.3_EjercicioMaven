@@ -27,7 +27,7 @@ class Factura_Test {
 		compra.meterProducto(pro3);
 		compra.meterProducto(pro4);
 		float actual = compra.totalFactura();
-		assertEquals(33.24f, actual);
+		assertEquals(33.24f, actual, 0.05);
 	}
 
 	@Test
@@ -38,6 +38,6 @@ class Factura_Test {
 		compra.meterProducto(pro3);
 		compra.meterProducto(pro4);
 		float actual = compra.aplicarIva(21f);
-		assertEquals(40.2204f, actual);
+		assertEquals(40.2204f, actual, 0.05);
 	}
 }
